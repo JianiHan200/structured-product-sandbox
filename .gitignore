@@ -1,0 +1,16 @@
+# Licensed data (OptionMetrics / CRSP via WRDS): never commit
+data/
+*.duckdb
+*.duckdb.wal
+*.parquet
+# Result tables can carry OptionMetrics-derived numbers: keep local
+results/*.csv
+results/*.zip
+*.zip
+# Private / scratch
+meeting/
+_to_delete/
+.tmp/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
